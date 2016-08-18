@@ -1,7 +1,7 @@
 project:
-    machine_name: blted8
-    prefix: BLT
-    human_name: 'BLTed 8'
+    machine_name: drub
+    prefix: DRUB
+    human_name: 'Drub'
     profile:
         name: lightning
         contrib: true
@@ -11,7 +11,7 @@ project:
 git:
     default_branch: master
     remotes:
-        - 'bolt8@svn-5223.devcloud.hosting.acquia.com:bolt8.git'
+        - 'eenshah@svn-2411.prod.hosting.acquia.com:eenshah.git'
 drush:
     aliases:
         remote: '${project.machine_name}.test'
@@ -32,4 +32,3 @@ target-hooks:
         dir: '${docroot}/profiles/contrib/lightning'
         command: 'npm run install-libraries'
 import: null
-
